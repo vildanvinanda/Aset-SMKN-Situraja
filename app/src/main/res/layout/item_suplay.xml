@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="200dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="10dp"
+    android:translationZ="2dp"
+    app:cardUseCompatPadding="true"
+    android:id="@+id/itemdashboard"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/bgcard2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/white">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/imgsolo"
+
+            >
+            <ImageView
+                android:id="@+id/imageitem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gambar"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/imgsolo"
+            android:id="@+id/name_suplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name Suplay"
+            android:textSize="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="#000"
+            android:ellipsize="end"
+            android:singleLine="true"
+
+            />
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:id="@+id/tamplate_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_suplay"
+            >
+            <TextView
+                android:id="@+id/txttotal_suplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jml Barang :"
+                android:textSize="12dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#000"
+                android:ellipsize="end"
+                android:singleLine="true"
+                />
+
+            <TextView
+                android:id="@+id/total_suplay"
+                android:layout_toEndOf="@+id/txttotal_suplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/roboto_regular"
+                android:singleLine="true"
+                android:text="1"
+                android:textColor="#000"
+                android:textSize="12dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bgtombol"
+            android:id="@+id/btn_pinjam"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Pinjam"
+            android:textSize="12dp"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/white"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

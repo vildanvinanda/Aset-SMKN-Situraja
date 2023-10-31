@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.DaftarFaq"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/header1"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daftar FAQ"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                />
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_back"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recfaq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header1"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            tools:listitem="@layout/item_faq"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+           android:id="@+id/btn_tambahFaq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/primer"
+            android:src="@drawable/ic_plus"
+            app:maxImageSize="26dp"
+            app:fabCustomSize="60dp"
+            app:tint="@color/white"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

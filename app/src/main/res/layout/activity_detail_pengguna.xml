@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailPengguna"
+    android:background="@color/white"
+    >
+
+<RelativeLayout
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_bgpengembalian"
+    />
+<RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_bgmurid"
+    >
+    <RelativeLayout
+        android:id="@+id/header1"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:id="@+id/backbtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/back_white"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/tamplate_profil"
+        android:layout_width="114dp"
+        android:layout_height="114dp"
+        android:layout_below="@+id/header1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="100dp"
+        >
+
+        <ImageView
+            android:id="@+id/ppuser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_prof_user" />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/nama_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+        android:text="Anonim"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_below="@id/tamplate_profil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@id/tamplate1"
+    android:layout_below="@+id/header"
+    android:layout_centerHorizontal="true"
+    android:layout_width="270dp"
+    android:layout_height="90dp"
+    android:background="@drawable/tamplateputih"
+    android:elevation="10dp"
+    android:translationZ="0dp"
+    android:outlineSpotShadowColor="#000"
+    android:layout_marginTop="-50dp"
+    android:layout_marginBottom="5dp"
+    android:orientation="horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="15dp"
+        >
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                >
+                <TextView
+                    android:id="@+id/jdl1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barang Dikembalikan"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textAlignment="center"
+                    android:textSize="12dp"
+                    />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jdl1"
+                    android:layout_centerHorizontal="true"
+                    >
+
+                    <TextView
+                        android:id="@+id/angka_kembali"
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="24dp" />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tctpcs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/pcs"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textAlignment="center"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_alignParentEnd="true"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                >
+                <TextView
+                    android:id="@+id/jdl2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barang     Dipinjam"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textAlignment="center"
+                    android:textSize="12dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jdl2"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/angka_pinjam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="24dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textAlignment="center"
+                        />
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tctpcs2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/pcs"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textAlignment="center"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_centerInParent="true"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#D4D4D4"
+        android:layout_marginVertical="10dp"
+        />
+
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_below="@id/tamplate1"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="20dp"
+    >
+
+    <TextView
+        android:id="@+id/txt_dari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        android:text="Data Diri :"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="10dp"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_dari"
+        >
+        <RelativeLayout
+            android:id="@id/tamplate"
+            android:layout_marginHorizontal="5dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="20dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tamplateputih"
+            android:elevation="10dp"
+            android:translationZ="0dp"
+            android:outlineSpotShadowColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:id="@+id/tamplatetxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/tamplatetxt2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/txtnis"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="NIS"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+                    <TextView
+                        android:id="@+id/tikdu2"
+                        android:layout_toEndOf="@+id/txtnis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+                    <TextView
+                        android:id="@+id/addnis"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/tikdu2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="***********"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_regular"
+                        />
+
+                    <ImageView
+                        android:id="@+id/copynis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="1dp"
+                        android:background="@drawable/ic_copy" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/tamplatetxt2"
+                    android:id="@+id/tamplatetxt3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txtnamab"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Nomor Hp"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+                    <TextView
+                        android:id="@+id/tikdu3"
+                        android:layout_toEndOf="@+id/txtnamab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+                    <TextView
+                        android:id="@+id/addnohp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/tikdu3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="***********"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_regular"
+                        />
+
+
+                    <ImageView
+                        android:id="@+id/copynohp"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/ic_copy"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/tamplatetxt3"
+                    android:id="@+id/tamplatetxt4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txtnjml"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+                    <TextView
+                        android:id="@+id/tikdu4"
+                        android:layout_toEndOf="@+id/txtnjml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+                    <TextView
+                        android:id="@+id/addemail"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/tikdu4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="***********"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_regular"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/tamplatetxt4"
+                    android:id="@+id/tamplatetxt5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txtjtp"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kelas"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+                    <TextView
+                        android:id="@+id/tikdu5"
+                        android:layout_toEndOf="@+id/txtjtp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+                    <TextView
+                        android:id="@+id/addkls"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/tikdu5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="***********"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_regular"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@+id/tamplatetxt5"
+                    android:id="@+id/tamplatetxt6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txtket"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Kelamin"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+                    <TextView
+                        android:id="@+id/tikdu6"
+                        android:layout_toEndOf="@+id/txtket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+                    <TextView
+                        android:id="@+id/addjk"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toEndOf="@+id/tikdu6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="***********"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_regular"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_below="@+id/tamplatetxt6"
+                    android:id="@+id/tamplatetxt7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/txtalamat"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+                    <TextView
+                        android:id="@+id/tikdu7"
+                        android:layout_toEndOf="@+id/txtalamat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=":"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_medium"
+                        />
+                    <TextView
+                        android:id="@+id/addalamat"
+                        android:layout_below="@+id/tikdu7"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="***********"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:fontFamily="@font/roboto_regular"
+                        />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>

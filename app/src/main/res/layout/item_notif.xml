@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_notifikasi"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="5dp"
+    android:layout_marginHorizontal="5dp"
+    android:background="@color/white"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tamplatenotif"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                >
+                <ImageView
+                    android:id="@+id/imgnotif"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/logo"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tamplatenotif"
+                android:layout_centerInParent="true"
+                >
+
+                <TextView
+                    android:id="@+id/txtjudulnotif"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Admin Kawan Ternak"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/roboto_medium"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/strip"
+                    android:layout_toEndOf="@+id/txtjudulnotif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:id="@+id/txttglnotif"
+                    android:layout_toEndOf="@+id/strip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="02/02/2023"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:id="@+id/isinotif"
+                    android:layout_below="@+id/txtjudulnotif"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Selamat datang dan selamat bergamung dengan apliasi kawan ternak"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_expand_right"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

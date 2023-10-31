@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomubahkelas"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_top"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/icfilter"
+                android:layout_alignParentStart="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_square_pen"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/icfilter"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Ubah Kelas"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/btnclosefilter"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_xmark" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/mulaidari"
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:id="@+id/countainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <RelativeLayout
+                    android:id="@+id/tampaltekelas"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/txtkelas2"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Kelas"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+                    <Spinner
+                        android:layout_below="@+id/txtkelas2"
+                        android:id="@+id/addkelas"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_edittext"
+                        android:paddingHorizontal="5dp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tampaltejurusan"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+
+                    >
+                    <RelativeLayout
+                        android:id="@+id/txtjurusan"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_medium"
+                            android:text="Jurusan"
+                            android:textColor="@color/black"
+                            android:textSize="12dp" />
+
+                    </RelativeLayout>
+
+                    <Spinner
+                        android:id="@+id/addjurusan"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_below="@+id/txtjurusan"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/bg_edittext"
+                        android:paddingHorizontal="5dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnubahkls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mulaidari"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/bgtombol"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_below="@+id/btnubahkls"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

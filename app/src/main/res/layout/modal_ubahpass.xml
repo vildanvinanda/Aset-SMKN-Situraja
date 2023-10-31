@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomubahpassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_top"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/icfilter"
+                android:layout_alignParentStart="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_square_pen"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/icfilter"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Ubah Password"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/btnclosemodal"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_xmark" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/mulaidari"
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/titlepasssebelum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password Sebelumnya"
+                android:textSize="14dp"
+                android:textColor="#242424"
+                android:fontFamily="@font/roboto_medium"
+                />
+
+            <EditText
+                android:id="@+id/eddpassebelum"
+                android:singleLine="true"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bgedittext"
+                android:layout_below="@+id/titlepasssebelum"
+                android:elevation="8dp"
+                android:hint="masukan password"
+                android:paddingVertical="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:translationY="0dp"
+                android:translationZ="-5dp"
+                android:shadowColor="@color/primer"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_below="@+id/eddpassebelum"
+                android:id="@+id/titlepasssesudauh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password Sebelumnya"
+                android:textSize="14dp"
+                android:textColor="#242424"
+                android:fontFamily="@font/roboto_medium"
+                />
+
+            <EditText
+                android:id="@+id/eddpassesudah"
+                android:singleLine="true"
+                android:inputType="number"
+                android:layout_below="@+id/titlepasssesudauh"
+                android:layout_width="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bgedittext"
+                android:elevation="8dp"
+                android:hint="masukan password"
+                android:paddingVertical="10dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="#000"
+                android:textSize="14dp"
+                android:translationY="0dp"
+                android:translationZ="-5dp"
+                android:shadowColor="@color/primer"
+                android:layout_marginBottom="10dp"
+                />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnubahpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mulaidari"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/bgtombol"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_below="@+id/btnubahpass"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

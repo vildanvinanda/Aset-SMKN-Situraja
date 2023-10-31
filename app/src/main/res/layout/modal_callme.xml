@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomcallme"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_top"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_marginHorizontal="20dp"
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/icfilter"
+                android:layout_alignParentStart="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_phone_blk_color"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/icfilter"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Kontak Kami"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/btnclosefilter"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/ic_xmark" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginHorizontal="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:id="@+id/mulaidari"
+            android:layout_below="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/logo_wa"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:background="@drawable/ic__whatsapp"
+                />
+            <ImageView
+                android:id="@+id/logo_ig"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:background="@drawable/ic__instagram"
+                android:layout_toEndOf="@+id/logo_wa"
+                android:layout_marginLeft="35dp"
+                />
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_below="@+id/mulaidari"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

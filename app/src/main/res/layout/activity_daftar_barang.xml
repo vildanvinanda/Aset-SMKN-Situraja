@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.DaftarBarang"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/TITLENOTIF"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                >
+                <RelativeLayout
+                    android:id="@+id/inititle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+
+                    >
+                    <ImageView
+                        android:id="@+id/btn_back"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/ic_back"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerInParent="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/test"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daftar Barang"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daftar Pinjaman"
+                        android:textSize="14dp"
+                        android:id="@+id/txt_uid"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daftar Pinjaman"
+                        android:textSize="14dp"
+                        android:id="@+id/txt_nama"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Daftar Pinjaman"
+                        android:textSize="14dp"
+                        android:id="@+id/txt_nis"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_medium"
+                        android:layout_centerHorizontal="true"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/kolomsearch"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_height="38dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/bgedittext"
+            android:drawableEnd="@drawable/ic_search"
+            android:elevation="8dp"
+            android:hint="Type something"
+            android:textColorHint="#dfdfdf"
+            android:paddingVertical="6dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:translationY="0dp"
+            android:translationZ="0dp"
+            android:layout_below="@+id/TITLENOTIF"
+            android:singleLine="true"
+            />
+
+
+        <!--    <RelativeLayout-->
+        <!--        android:id="@+id/btmswitch"-->
+        <!--        android:layout_marginTop="20dp"-->
+        <!--        android:layout_below="@+id/kolomsearch"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginHorizontal="20dp"-->
+        <!--        android:orientation="horizontal"-->
+        <!--        >-->
+
+        <!--        <RelativeLayout-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/btnsemua"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:background="@drawable/bgtombol"-->
+        <!--            >-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/txtall"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Semua"-->
+        <!--                android:textSize="12dp"-->
+        <!--                android:textColor="@color/white"-->
+        <!--                android:fontFamily="@font/roboto_bold"-->
+        <!--                />-->
+        <!--        </RelativeLayout>-->
+        <!--        <RelativeLayout-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginHorizontal="16dp"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:id="@+id/btnfilter1"-->
+        <!--            android:background="@drawable/button_rounded_daftar"-->
+        <!--            >-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/txtpinjam"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Pinjaman"-->
+        <!--                android:textColor="@color/primer"-->
+        <!--                android:fontFamily="@font/roboto_bold"-->
+        <!--                android:textSize="12dp"-->
+        <!--                />-->
+        <!--        </RelativeLayout>-->
+        <!--        <RelativeLayout-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:id="@+id/btnfilter2"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:background="@drawable/button_rounded_daftar"-->
+        <!--            >-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/txtkembali"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Dikembalikan"-->
+        <!--                android:textSize="12dp"-->
+        <!--                android:textColor="@color/primer"-->
+        <!--                android:fontFamily="@font/roboto_bold"-->
+        <!--                />-->
+        <!--        </RelativeLayout>-->
+
+
+        <!--    </RelativeLayout>-->
+
+        <View
+            android:id="@+id/lane11"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/kolomsearch"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDD"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lane11"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="100dp"
+                android:layout_marginHorizontal="20dp"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_suplay"
+                    android:id="@+id/rec_barang"
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:listitem="@layout/item_dafpin"
+                    android:visibility="gone"
+                    android:id="@+id/rec_barang2"
+                    />
+                <!--            <androidx.recyclerview.widget.RecyclerView-->
+                <!--                android:layout_marginTop="10dp"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                tools:listitem="@layout/item_dafpin"-->
+                <!--                android:visibility="gone"-->
+                <!--                android:id="@+id/recdafpin3"-->
+                <!--                />-->
+                <!--            <androidx.recyclerview.widget.RecyclerView-->
+                <!--                android:layout_marginTop="10dp"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                tools:listitem="@layout/item_dafpin"-->
+                <!--                android:visibility="gone"-->
+                <!--                android:id="@+id/recdafpin4"-->
+                <!--                />-->
+            </RelativeLayout>
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_tambahBarang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="30dp"
+            android:backgroundTint="@color/primer"
+            android:elevation="2dp"
+            android:src="@drawable/ic_plus"
+            app:maxImageSize="26dp"
+            app:fabCustomSize="60dp"
+            app:tint="@color/white"
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>

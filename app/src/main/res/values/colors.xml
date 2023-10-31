@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="primer">#0363BB</color>
+    <color name="hijaubtn">#4EBB1A</color>
+    <color name="merahbtn">#F5502C</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="abumuda">#DEDEDE</color>
+    <color name="abutua">#5F5F5F</color>
+    <color name="Hijaumuda">#DDF9A4</color>
+    <color name="Hijaumuda2">#EBFFC3</color>
+    <color name="Hijautua">#76982F</color>
+    <color name="Merahmuda">#EDD5D5</color>
+    <color name="Merahtua">#EE5858</color>
+    <color name="KuningMuda">#FFF3C8</color>
+    <color name="KuningMuda2">#FFF3C8</color>
+    <color name="KuningTua">#CC9F02</color>
+</resources>

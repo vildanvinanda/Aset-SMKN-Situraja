@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/no_internet_layout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@drawable/bgtombolwhite"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="20dp"
+    >
+
+    <ImageView
+        android:id="@+id/gambar_lost"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_wifi_slash" />
+
+    <TextView
+        android:id="@+id/jdltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gambar_lost"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/roboto_black"
+        android:text="Tidak ada Internet"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/subjdl"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jdltxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Tolong periksa jaringan internet anda dan coba hubungkan kembali.!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/btn_try"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/subjdl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bgtombol"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:text="Coba Lagi"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>

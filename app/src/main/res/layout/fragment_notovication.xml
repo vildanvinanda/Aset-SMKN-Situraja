@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragmen.Notivication">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:id="@+id/TITLENOTIF"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/inititle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+
+                        >
+                        <ImageView
+                            android:id="@+id/backbtnnotif"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/ic_back"
+                            />
+
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Notifikasi"
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/roboto_medium"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:id="@+id/txt_uid"
+                            android:visibility="gone"
+                            android:layout_centerInParent="true"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Notifikasi"
+                            android:textSize="14dp"
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/roboto_medium"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/TITLENOTIF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recviewnotif"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </RelativeLayout>
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/emptynotif"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginHorizontal="20dp"-->
+<!--                android:layout_below="@+id/titleKeuangan"-->
+<!--                >-->
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:id="@+id/emptyimage"-->
+<!--                        android:layout_width="220dp"-->
+<!--                        android:layout_height="200dp"-->
+<!--                        android:background="@drawable/not_found_uang"-->
+<!--                        />-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/emptytitle"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@+id/emptyimage"-->
+<!--                        android:text="Tidak Ada Notifikasi"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:fontFamily="@font/poppinsbold"-->
+<!--                        android:textSize="18dp"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:layout_marginTop="20dp"/>-->
+<!--                    <TextView-->
+<!--                        android:id="@+id/emptysubtitle"-->
+<!--                        android:layout_width="200dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@+id/emptytitle"-->
+<!--                        android:text="Mohon maaf saat ini anda tidak memiliki pesan"-->
+<!--                        android:textColor="@color/black"-->
+<!--                        android:fontFamily="@font/poppinsregular"-->
+<!--                        android:textSize="12dp"-->
+<!--                        android:layout_centerHorizontal="true"-->
+<!--                        android:textAlignment="center"-->
+<!--                        />-->
+<!--                </RelativeLayout>-->
+<!--            </RelativeLayout>-->
+
+        </RelativeLayout>
+
+
+
+</FrameLayout>

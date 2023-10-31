@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projectwiki">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectWiki.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Regis">
+
+        </activity>
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DetailPengguna" />
+        <activity android:name=".Admin.DaftarPengguna" />
+        <activity android:name=".Admin.ListPengembalian" />
+        <activity android:name=".Admin.FormTambahFaq" />
+        <activity android:name=".Admin.DaftarFaq" />
+        <activity android:name=".Admin.FormUpdateBarang" />
+        <activity android:name=".Admin.DaftarBarang" />
+        <activity android:name=".Admin.FormTambahBarang" />
+        <activity android:name=".Admin.LoginAdmin" />
+        <activity android:name=".Admin.DetailPinjamanUser" />
+        <activity android:name=".Admin.DaftarPengajuan" />
+        <activity android:name=".Admin.ProfilAdmin" />
+        <activity android:name=".Admin.HomeAdmin" />
+        <activity android:name=".Detail.DetailNotifikasi" />
+        <activity android:name=".Faq" />
+        <activity android:name=".UbahDataProfil" />
+        <activity android:name=".ProfilSetting" />
+        <activity android:name=".Form.FormPengembalian" />
+        <activity android:name=".Detail.DetailBarangPinjaman" />
+        <activity android:name=".Form.FormPengajuan" />
+        <activity android:name=".Detail.DetailBarang" />
+        <activity android:name=".MainActivity3" />
+        <activity android:name=".DetailPengembalian" />
+        <activity android:name=".Dashboard" />
+        <activity android:name=".Register">
+
+        </activity>
+        <activity android:name=".Login"></activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

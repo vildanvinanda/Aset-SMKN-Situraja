@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilSetting"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/header1"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setting"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:id="@+id/txt_type"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Setting"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                />
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_back"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/user_domain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header1"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Profil Akun"
+                android:textColor="#242424"
+                android:textSize="14dp" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/icpass"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_lockkey"
+                    android:layout_centerInParent="true"
+                    />
+                <RelativeLayout
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/icpass"
+                    android:layout_marginStart="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/updatepass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Ubah Password"
+                        android:textColor="#242424"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:layout_below="@+id/updatepass"
+                        android:id="@+id/ketpass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Perbarui password demi keamanan anda"
+                        android:textColor="#979797"
+                        android:textSize="12dp"
+                        />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/rowright"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_expand_right"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/icprofil"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_account"
+                    android:layout_centerInParent="true"
+                    />
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/icprofil"
+                    android:layout_marginStart="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/updateprofil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Ubah Profil"
+                        android:textColor="#242424"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:layout_below="@+id/updateprofil"
+                        android:id="@+id/ketprofil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Perbarui/Lengkapi identitas anda "
+                        android:textColor="#979797"
+                        android:textSize="12dp"
+                        />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/rowright2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_expand_right"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Pusat Bantuan"
+                android:textColor="#242424"
+                android:textSize="14dp" />
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/ictlp"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_phone"
+                    android:layout_centerInParent="true"
+                    />
+                <RelativeLayout
+                    android:id="@+id/title3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/ictlp"
+                    android:layout_marginStart="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/bantuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Hubungi Kami"
+                        android:textColor="#242424"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:layout_below="@+id/bantuan"
+                        android:id="@+id/ketbantuan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Hubungi kami disini"
+                        android:textColor="#979797"
+                        android:textSize="12dp"
+                        />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/rowright3"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_expand_right"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/icfaq"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_circle_question"
+                    android:layout_centerInParent="true"
+                    />
+                <RelativeLayout
+                    android:id="@+id/title4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/icfaq"
+                    android:layout_marginStart="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/faq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="FAQ"
+                        android:textColor="#242424"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_below="@+id/faq"
+                        android:id="@+id/ketfaq"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Pertanyaan yang sering ditanyakan"
+                        android:textColor="#979797"
+                        android:textSize="12dp"
+                        />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/rowright4"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_expand_right"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Aplikasi"
+                android:textColor="#242424"
+                android:textSize="14dp" />
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/icVERSI"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_circlei_information"
+                    android:layout_centerInParent="true"
+                    />
+                <RelativeLayout
+                    android:id="@+id/title5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/icVERSI"
+                    android:layout_marginStart="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/vapp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Vaersi Aplikasi"
+                        android:textColor="#242424"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:layout_below="@+id/vapp"
+                        android:id="@+id/ketvapp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="0.1 Beta"
+                        android:textColor="#979797"
+                        android:textSize="12dp"
+                        />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/icout"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_logout"
+                    android:layout_centerInParent="true"
+                    />
+                <RelativeLayout
+                    android:id="@+id/title6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/icout"
+                    android:layout_marginStart="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/out"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Keluar"
+                        android:textColor="#242424"
+                        android:textSize="14dp"
+                        />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/rowright5"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_expand_right"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:id="@+id/admin_domain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header1"
+            android:layout_marginTop="30dp"
+            android:layout_marginHorizontal="20dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Profil Akun"
+                android:textColor="#242424"
+                android:textSize="14dp" />
+
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/icpass2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_lockkey"
+                    android:layout_centerInParent="true"
+                    />
+                <RelativeLayout
+                    android:id="@+id/title22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/icpass2"
+                    android:layout_marginStart="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/updatepass2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Ubah Password"
+                        android:textColor="#242424"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:layout_below="@+id/updatepass2"
+                        android:id="@+id/ketpass2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Perbarui password demi keamanan anda"
+                        android:textColor="#979797"
+                        android:textSize="12dp"
+                        />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/rowright1_admin"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_expand_right"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/icprofil2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_account"
+                    android:layout_centerInParent="true"
+                    />
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/title2_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/icprofil2"
+                    android:layout_marginStart="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/updateprofil2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Ubah Profil"
+                        android:textColor="#242424"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:layout_below="@+id/updateprofil2"
+                        android:id="@+id/ketprofil2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Perbarui/Lengkapi identitas anda "
+                        android:textColor="#979797"
+                        android:textSize="12dp"
+                        />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/rowright2_admin"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_expand_right"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_medium"
+                android:text="Aplikasi"
+                android:textColor="#242424"
+                android:textSize="14dp" />
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/icVERSI2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_circlei_information"
+                    android:layout_centerInParent="true"
+                    />
+                <RelativeLayout
+                    android:id="@+id/title52"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/icVERSI2"
+                    android:layout_marginStart="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/vapp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Vaersi Aplikasi"
+                        android:textColor="#242424"
+                        android:textSize="14dp"
+                        />
+                    <TextView
+                        android:layout_below="@+id/vapp2"
+                        android:id="@+id/ketvapp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="0.1 Beta"
+                        android:textColor="#979797"
+                        android:textSize="12dp"
+                        />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/icout_admin"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/ic_logout"
+                    android:layout_centerInParent="true"
+                    />
+                <RelativeLayout
+                    android:id="@+id/title6_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/icout_admin"
+                    android:layout_marginStart="10dp"
+                    >
+                    <TextView
+                        android:id="@+id/out_admin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Keluar"
+                        android:textColor="#242424"
+                        android:textSize="14dp"
+                        />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/rowright3_admin"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/ic_expand_right"
+                    android:layout_alignParentEnd="true"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Aset SMKN SITURAJA"
+            android:textColor="#3A3A3A"
+            android:textSize="12dp"
+            />
+        
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard"
+    android:background="@color/white"
+    >
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_above="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottomAppBar"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/white"
+        >
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemIconSize="24dp"
+            android:id="@+id/bottomNavigationView"
+            app:menu="@menu/bottom_nav"
+            app:labelVisibilityMode="unlabeled"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:layout_marginEnd="16dp"
+            app:itemIconTint="@color/color_bottom_nav"
+            app:itemTextColor="@color/color_bottom_nav"
+            />
+    </com.google.android.material.bottomappbar.BottomAppBar>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/market"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@color/primer"
+        app:layout_anchor="@id/bottomAppBar"
+        android:src="@drawable/ic_bag"
+        app:tint="@android:color/white"
+        app:maxImageSize="27dp"
+        app:fabCustomSize="60dp"
+        />
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

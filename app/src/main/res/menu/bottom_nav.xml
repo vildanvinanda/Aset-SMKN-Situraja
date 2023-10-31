@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <item android:title="Home"
+        android:enabled="true"
+        android:id="@+id/miHome"
+        android:icon="@drawable/child_selector1"
+        app:showAsAction="ifRoom"
+        />
+    <item android:title="Pinjaman"
+        android:id="@+id/miDafPin"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/child_selector2"/>
+
+    <item android:title=""
+        android:id="@+id/minull"
+        />
+    <item android:title="Notifikasi"
+        android:enabled="true"
+        android:id="@+id/miNotif"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/child_selector4"/>
+
+    <item android:title="Profil"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:id="@+id/miProfil"
+        android:icon="@drawable/child_selector5"/>
+
+</menu>

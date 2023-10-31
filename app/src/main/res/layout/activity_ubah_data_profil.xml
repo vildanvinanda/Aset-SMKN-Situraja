@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UbahDataProfil"
+    android:background="@color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/header1"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubah Profil"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                />
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_back"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_domain"
+            android:layout_below="@+id/header1"
+            android:layout_marginTop="30dp"
+            >
+
+            <RelativeLayout
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/jdl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#242424"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Ubah Profil"
+                    />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/jdl"
+                    android:id="@+id/updateusername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#242424"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Nama"
+                        />
+                    <ImageView
+                        android:id="@+id/rowright"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_expand_right"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/updatenomor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/updateusername"
+                    android:layout_marginTop="20dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#242424"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="No.HP"
+                        />
+                    <ImageView
+                        android:id="@+id/rowright2"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_expand_right"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/updategender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/updatenomor"
+                    android:layout_marginTop="20dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#242424"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Jenis Kelamin"
+                        />
+                    <ImageView
+                        android:id="@+id/rowright3"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_expand_right"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/updatekelas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/updategender"
+                    android:layout_marginTop="20dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#242424"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Kelas"
+                        />
+                    <ImageView
+                        android:id="@+id/rowright4"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_expand_right"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/updatealamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/updatekelas"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Alamat"
+                        android:textColor="#242424"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/rowright5"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_expand_right"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_domain"
+            android:layout_below="@+id/header1"
+            android:layout_marginTop="30dp"
+            >
+
+            <RelativeLayout
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/jdl_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14dp"
+                    android:textColor="#242424"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Ubah Profil"
+                    />
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/jdl_admin"
+                    android:id="@+id/updateusername_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#242424"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Nama"
+                        />
+                    <ImageView
+                        android:id="@+id/rowright_admin"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_expand_right"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/updatenomor_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/updateusername_admin"
+                    android:layout_marginTop="20dp"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14dp"
+                        android:textColor="#242424"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="No.HP"
+                        />
+                    <ImageView
+                        android:id="@+id/rowright2_admin"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_expand_right"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/updatealamat_admin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/updatenomor_admin"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="Alamat"
+                        android:textColor="#242424"
+                        android:textSize="14dp" />
+
+                    <ImageView
+                        android:id="@+id/rowright3_admin"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_expand_right"
+                        android:layout_alignParentEnd="true"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Aset SMKN SITURAJA"
+            android:textColor="#3A3A3A"
+            android:textSize="14dp"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

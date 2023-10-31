@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.FormTambahFaq"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:id="@+id/header1"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/connntoj"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah FAQ"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txt_type"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Barang"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/txt_type2"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Barang"
+            android:fontFamily="@font/roboto_medium"
+            android:textSize="14dp"
+            android:textColor="@color/black"
+            />
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/ic_back"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:id="@+id/tamplateall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                >
+
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/tamplatetxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/tex"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pertanyaan"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        />
+                    <EditText
+                        android:id="@+id/addpertanyaan"
+                        android:singleLine="true"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/tex"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textColorHint="#D4D4D4"
+                        android:background="@drawable/bg_edittext"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:hint="Masukan pertanyaan"
+                        android:paddingHorizontal="20dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tex2"
+                        android:layout_below="@+id/addpertanyaan"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jawaban"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        />
+
+                    <EditText
+                        android:inputType="number"
+                        android:id="@+id/addjawaban"
+                        android:singleLine="true"
+                        android:maxLength="5"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@id/tex2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:textColorHint="#D4D4D4"
+                        android:background="@drawable/bg_edittext"
+                        android:textColor="@color/black"
+                        android:textSize="12dp"
+                        android:hint="Masukan jumlah pinjaman"
+                        android:paddingHorizontal="20dp"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginVertical="50dp"
+                android:layout_below="@+id/tamplateall"
+                android:id="@+id/btn_kirim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgtombol"
+                android:layout_centerHorizontal="true"
+                android:paddingHorizontal="60dp"
+                android:paddingVertical="10dp"
+                android:text="Kirim"
+                android:fontFamily="@font/roboto_medium"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

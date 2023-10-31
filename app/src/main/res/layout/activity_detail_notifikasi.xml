@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail.DetailNotifikasi"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/header1"
+            android:layout_marginTop="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Notifikasi"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detil Notifikasi"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:id="@+id/txt_uid"
+                />
+            <TextView
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Form Peminjaman"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:id="@+id/txt_nama"
+                />
+            <TextView
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Form Peminjaman"
+                android:fontFamily="@font/roboto_medium"
+                android:textSize="14dp"
+                android:textColor="@color/black"
+                android:id="@+id/txt_bpid"
+                />
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_back"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/header1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/kop"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/lognotif2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:cardCornerRadius="50dp">
+
+                    <ImageView
+                        android:id="@+id/logonotif2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/logo" />
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/lognotif2">
+
+                    <TextView
+                        android:id="@+id/txtjudul2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_medium"
+                        android:text="Admin Kawan Ternak"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/txttglnotif2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtjudul2"
+                        android:fontFamily="@font/roboto_regular"
+                        android:text="02/02/2023 - 20:00 PM"
+                        android:textColor="#D0D0D0"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/line"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/kop"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="1dp"
+                android:background="#DDD"/>
+
+            <TextView
+                android:id="@+id/isinotif2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/line"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="11dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="disini letak text"
+                android:textColor="@color/black"
+                android:textSize="12dp" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

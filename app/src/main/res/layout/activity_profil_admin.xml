@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.ProfilAdmin"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:id="@+id/header1"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/backbtn"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_back"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profil"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_type"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Profil"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    />
+                <ImageView
+                    android:id="@+id/settingbtn"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_gear"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerInParent="true"
+
+                    />
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/tamplate_profil"
+                android:layout_width="114dp"
+                android:layout_height="114dp"
+                android:layout_below="@+id/header1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                app:cardCornerRadius="100dp"
+                >
+
+                <ImageView
+                    android:id="@+id/ppuser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_prof_user" />
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/float_editpp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:backgroundTint="@color/primer"
+                android:layout_below="@+id/tamplate_profil"
+                android:layout_toEndOf="@+id/tamplate_profil"
+                android:layout_marginLeft="-40dp"
+                android:layout_marginTop="-40dp"
+                android:src="@drawable/ic_edit"
+                app:tint="@android:color/white"
+                app:maxImageSize="24dp"
+                app:fabCustomSize="25dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/tamplatename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tamplate_profil"
+                android:layout_marginTop="20dp"
+
+                android:layout_centerInParent="true"
+                >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <TextView
+                        android:id="@+id/txt_adm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textSize="12dp"
+                        android:paddingVertical="5dp"
+                        android:paddingHorizontal="10dp"
+                        android:background="@drawable/bgtombol"
+                        android:textColor="@color/white"
+                        />
+                    <TextView
+                        android:id="@+id/txt_user"
+                        android:layout_toEndOf="@+id/txt_adm"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Anonim"
+                        android:fontFamily="@font/roboto_bold"
+                        android:textSize="14dp"
+                        android:textColor="@color/black"
+                        />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/tamplate_nis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tamplatename"
+                android:layout_marginTop="5dp"
+                >
+                <RelativeLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    >
+                    <TextView
+                        android:id="@+id/jdl_nis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NISN :"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:layout_toEndOf="@+id/jdl_nis"
+                        android:id="@+id/txt_nis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1234567"
+                        android:fontFamily="@font/roboto_medium"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/aksesoris"
+                android:layout_below="@+id/tamplate_nis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_aksesoris_profil"
+                />
+
+
+            <RelativeLayout
+                android:layout_below="@id/aksesoris"
+                android:id="@+id/tamplatedatauser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp">
+
+                <TextView
+                    android:id="@+id/jdl_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtuid"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jdl_email"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="anonim@gmail.com"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/jdl_nomor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_email"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Nomor Handphone"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txt_nomor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jdl_nomor"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="08XXXXXXXXXX"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/jdl_alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_nomor"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Alamat"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txt_alamat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/jdl_alamat"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Alamat belum ditentukan!!"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_below="@+id/tamplatedatauser" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

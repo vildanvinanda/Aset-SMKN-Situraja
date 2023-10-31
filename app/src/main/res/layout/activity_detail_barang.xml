@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Detail.DetailBarang"
+    android:background="@color/white"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:id="@+id/header1"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/connntoj"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Barang"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_bpid"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Barang"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_img"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Barang"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/txt_type"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="user"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    />
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_back"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerInParent="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/header1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="20dp"
+                >
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardview_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    app:cardCornerRadius="10dp"
+                    >
+                    <ImageView
+                        android:id="@+id/img_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gambar"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/jdl_detaiIMG"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Barang"
+                    android:fontFamily="@font/roboto_bold"
+                    android:textSize="14dp"
+                    android:layout_below="@+id/cardview_img"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    />
+                <RelativeLayout
+                    android:id="@+id/tamplate_jml"
+                    android:layout_below="@+id/jdl_detaiIMG"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:id="@+id/txt_tesedia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tersedia :"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                    />
+                    <TextView
+                        android:id="@+id/txt_jml"
+                        android:layout_toEndOf="@+id/txt_tesedia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="10"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                    />
+                    <TextView
+                        android:id="@+id/txt_pcs"
+                        android:layout_toEndOf="@+id/txt_jml"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/unit"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+                    />
+                    <TextView
+                        android:id="@+id/txt_tgl"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="09/03/2023"
+                        android:fontFamily="@font/roboto_regular"
+                        android:textSize="12dp"
+                        android:textColor="#d4d4d4"
+                    />
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/line"
+                    android:layout_below="@+id/tamplate_jml"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D4D4D4"
+                    />
+
+                <TextView
+                    android:id="@+id/tex"
+                    android:layout_below="@+id/line"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi :"
+                    android:fontFamily="@font/roboto_medium"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:id="@+id/text_des"
+                    android:layout_below="@+id/tex"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi barang"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textSize="12dp"
+                    android:textColor="@color/black"
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/button_pinjam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bgtombol"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="10dp"
+        android:text="Ajukan Peminjaman Barang"
+        android:visibility="gone"
+        android:textColor="@color/white" />
+
+    <TextView
+
+        android:id="@+id/btn_updateB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bgtombol"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Perbarui"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_marginVertical="50dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/roboto_medium"
+        android:id="@+id/btn_hapus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgtblmerah"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="10dp"
+        android:text="Hapus"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
